@@ -11,23 +11,40 @@
 </head>
 
 <body>
+  <div class="container">
+    <form class="form">
+      <div class="wrapper">
 
-  Day
-  DD
+        <label for="day">Day</label>
+        <input type="number" name="day" id="day" placeholder="DD">
+      </div>
 
-  Month
-  MM
+      <div class="wrapper">
+        <label for="month">Month</label>
+        <input type="number" name="month" id="month" placeholder="MM">
+      </div>
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+      <div class="wrapper">
+        <label for="year">Year</label>
+        <input type="number" name="year" id="year" placeholder="YYYY">
+      </div>
+      
+      <hr>
+      <button type="submit">
+        <img src="assets/images/icon-arrow.svg" alt="arrow">
+      </button>
+    </form>
+    
+    <div class="age">
+    <p><span class="number">--</span>years</p>
+    <p><span class="number">--</span>months</p>
+    <p><span class="number">--</span>days</p>
+    </div> 
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
-    Coded by <a href="https://github.com/gabyplasencia/Age-Calculator/tree/master">Gabriela Plasencia</a>
+    Coded by <a href="https://github.com/gabyplasencia/Age-Calculator/tree/master" target="_blank">Gabriela Plasencia</a>
   </div>
 </body>
 </html>
