@@ -66,6 +66,15 @@ ul {
   --black: hsl(0, 0%, 8%);
 }
 
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 :root {
   --font-family: "Poppins", sans-serif;
   --fw-regular: 400;
