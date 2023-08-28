@@ -1,1 +1,73 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  line-height: 1.2;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --font-family: "Poppins", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fs-small: 1rem;
+  --fs-regular: 2rem;
+  --fs-big: 4rem;
+}
+
+:root {
+  --text-label: var(var(--fs-small));
+  --text-input: var(var(--fs-regular));
+  --text-age: var(var(--fs-big));
+}/*# sourceMappingURL=style.css.map */
