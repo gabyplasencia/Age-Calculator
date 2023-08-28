@@ -83,4 +83,18 @@ ul {
   --fs-small: 1rem;
   --fs-regular: 2rem;
   --fs-big: 4rem;
+}
+
+body {
+  background-color: var(--off-white);
+}
+
+.container {
+  margin: 2rem;
+  margin-inline: auto;
+  width: 70%;
+  background-color: var(--white);
+  padding: 4rem;
+  border-radius: 20px;
+  border-bottom-right-radius: 150px;
 }/*# sourceMappingURL=style.css.map */
