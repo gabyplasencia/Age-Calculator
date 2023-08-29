@@ -99,6 +99,24 @@ body {
   border-bottom-right-radius: 150px;
 }
 
+.attribution {
+  margin-inline: auto;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.form__head {
+  gap: 2.5rem;
+}
+.form__label {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--grey);
+}
 .btn-wrapper {
   position: relative;
   width: 100%;

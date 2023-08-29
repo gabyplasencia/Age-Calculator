@@ -1,0 +1,19 @@
+.form {
+
+    &__head {
+        gap: 2.5rem;
+    }
+
+    &__label{
+        font-size: var(--fs-small);
+        font-weight: var(--fw-bold);
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: var(--grey);
+    }
+
+    &__input {
+
+    }
+}
+

@@ -1,4 +1,5 @@
 $height-btn: 6rem;
+$negative-height-btn: -6rem;
 
 .btn-wrapper {
     position: relative;
@@ -19,7 +20,7 @@ $height-btn: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: calc(-$height-btn / 2);
+    margin-top: calc( $negative-height-btn / 2);
     margin-left: auto;
     margin-right: -2px;
     border: none;
