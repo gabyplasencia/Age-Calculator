@@ -92,9 +92,38 @@ body {
 .container {
   margin: 2rem;
   margin-inline: auto;
-  width: 70%;
+  width: 60%;
   background-color: var(--white);
   padding: 4rem;
   border-radius: 20px;
   border-bottom-right-radius: 150px;
+}
+
+.btn-wrapper {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+}
+
+.line {
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+  height: 3.1px;
+  border: 1px solid var(--off-white);
+  background-color: var(--off-white);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3rem;
+  margin-left: auto;
+  margin-right: -2px;
+  border: none;
+  height: 6rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--purple);
 }/*# sourceMappingURL=style.css.map */
