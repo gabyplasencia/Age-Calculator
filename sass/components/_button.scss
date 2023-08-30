@@ -1,3 +1,5 @@
+@use "../util" as u;
+
 $height-btn: 6rem;
 $negative-height-btn: -6rem;
 
@@ -29,3 +31,31 @@ $negative-height-btn: -6rem;
     border-radius: 50%;
     background-color: var(--purple);
   }
+
+  @media (max-width: u.$mobile) {
+
+    $height-btn: 3.5rem;
+    $negative-height-btn: -3.5rem;
+
+.btn-wrapper {
+    margin: 2rem 0;
+    height: $height-btn;
+  }
+  
+  .line {
+    top: calc($height-btn / 2);
+    height: 2px;
+  }
+  
+.button {
+    margin: 0;
+    margin-top: calc( $negative-height-btn / 2);
+    margin-inline: auto;
+    height: $height-btn;
+
+    &__arrow {
+      height: calc($height-btn / 2.5);
+    }
+  }
+
+}

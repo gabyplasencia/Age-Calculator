@@ -1,3 +1,5 @@
+@use "../util" as u;
+
 .age {
     font-size: var(--fs-big);
     font-weight: var(--fw-extrabold);
@@ -8,5 +10,16 @@
     &__number {
         color: var(--purple);
         letter-spacing: 14px;
+    }
+}
+
+@media (max-width: u.$mobile){
+    .age {
+        letter-spacing: -2px;
+    
+        &__number {
+            margin-right: 0.5rem;
+            letter-spacing: 1px;
+        }
     }
 }

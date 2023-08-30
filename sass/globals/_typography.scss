@@ -1,3 +1,5 @@
+@use "../util" as u;
+
 body {
     font-family: var(--font-family);
 }
@@ -12,5 +14,12 @@ body {
     a { 
         color: var(--grey);
         font-weight: var(--fw-bold);
+    }
+}
+
+@media (max-width: u.$mobile) {
+    .attribution {
+        margin-top: 2.5rem;
+        font-size: var(--fs-regular);
     }
 }

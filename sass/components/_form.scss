@@ -1,4 +1,7 @@
+@use "../util" as u;
+
 .form {
+    margin-top: 5rem;
     background-color: var(--white);
     padding: 4rem;
     border-radius: 20px;
@@ -22,7 +25,7 @@
         height: 5.5rem;
         font-size: var(--fs-regular);
         font-weight: var(--fw-bold);
-        color: var(--grey);
+        color: var(--black);
         margin-top: 0.8rem;
         border: solid 3px var(--off-white);
         border-radius: 10px;
@@ -33,5 +36,26 @@
         font-size: var(--fs-regular);
         font-weight: var(--fw-bold);
     }
+
+}
+
+@media (max-width: u.$mobile){
+    .form {
+        padding: 3rem 1.4rem;
+        border-bottom-right-radius: 100px;
+
+        &__head {
+            grid-template-columns: repeat(3, 30%);
+            gap: 0.5rem;
+        }
+    
+        &__input {
+            margin-top: 0.4rem;
+            height: 3rem;
+            padding: 0.4rem 0.6rem;
+        }
+    
+    }
+    
 }
 

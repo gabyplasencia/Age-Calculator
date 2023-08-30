@@ -1,13 +1,20 @@
+@use "../util" as u;
+
 body {
     background-color: var(--off-white);
 }
 
 .container {
-    margin: 2rem;
-    margin-inline: auto;
+    margin: 0 auto;
     width: 60%;
 }
 
 .attribution {
     text-align: center;
+}
+
+@media (max-width: u.$mobile) {
+    .container{
+        width: 90%;
+    }
 }

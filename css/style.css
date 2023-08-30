@@ -85,13 +85,19 @@ ul {
   --fs-big: 6rem;
 }
 
+@media (max-width: 376px) {
+  :root {
+    --fs-small: 0.7rem;
+    --fs-regular: 1.1rem;
+    --fs-big: 3rem;
+  }
+}
 body {
   background-color: var(--off-white);
 }
 
 .container {
-  margin: 2rem;
-  margin-inline: auto;
+  margin: 0 auto;
   width: 60%;
 }
 
@@ -99,6 +105,11 @@ body {
   text-align: center;
 }
 
+@media (max-width: 376px) {
+  .container {
+    width: 90%;
+  }
+}
 body {
   font-family: var(--font-family);
 }
@@ -116,6 +127,12 @@ body {
   font-weight: var(--fw-bold);
 }
 
+@media (max-width: 376px) {
+  .attribution {
+    margin-top: 2.5rem;
+    font-size: var(--fs-regular);
+  }
+}
 .age {
   font-size: var(--fs-big);
   font-weight: var(--fw-extrabold);
@@ -128,7 +145,17 @@ body {
   letter-spacing: 14px;
 }
 
+@media (max-width: 376px) {
+  .age {
+    letter-spacing: -2px;
+  }
+  .age__number {
+    margin-right: 0.5rem;
+    letter-spacing: 1px;
+  }
+}
 .form {
+  margin-top: 5rem;
   background-color: var(--white);
   padding: 4rem;
   border-radius: 20px;
@@ -150,7 +177,7 @@ body {
   height: 5.5rem;
   font-size: var(--fs-regular);
   font-weight: var(--fw-bold);
-  color: var(--grey);
+  color: var(--black);
   margin-top: 0.8rem;
   border: solid 3px var(--off-white);
   border-radius: 10px;
@@ -165,6 +192,21 @@ body {
   font-weight: var(--fw-bold);
 }
 
+@media (max-width: 376px) {
+  .form {
+    padding: 3rem 1.4rem;
+    border-bottom-right-radius: 100px;
+  }
+  .form__head {
+    grid-template-columns: repeat(3, 30%);
+    gap: 0.5rem;
+  }
+  .form__input {
+    margin-top: 0.4rem;
+    height: 3rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
 .btn-wrapper {
   position: relative;
   width: 100%;
@@ -192,4 +234,24 @@ body {
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: var(--purple);
+}
+
+@media (max-width: 376px) {
+  .btn-wrapper {
+    margin: 2rem 0;
+    height: 3.5rem;
+  }
+  .line {
+    top: 1.75rem;
+    height: 2px;
+  }
+  .button {
+    margin: 0;
+    margin-top: -1.75rem;
+    margin-inline: auto;
+    height: 3.5rem;
+  }
+  .button__arrow {
+    height: 1.4rem;
+  }
 }/*# sourceMappingURL=style.css.map */
