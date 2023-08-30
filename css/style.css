@@ -199,6 +199,19 @@ body {
   font-weight: var(--fw-bold);
 }
 
+.input-wrapper.error .form__label {
+  color: var(--light-red);
+}
+.input-wrapper.error .form__input {
+  border-color: var(--light-red);
+}
+
+.input-wrapper .error-message {
+  color: var(--light-red);
+  font-size: var(--fs-small);
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 376px) {
   .form {
     padding: 3rem 1.4rem;

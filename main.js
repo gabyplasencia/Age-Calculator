@@ -11,7 +11,7 @@ form.addEventListener('submit', e => {
 
 const setError = (element, message) => {
     const inputWrapper = element.parentElement;
-    const errorDisplay = inputWrapper.querySelector('.error');
+    const errorDisplay = inputWrapper.querySelector('.error-message');
 
     errorDisplay.innerText = message;
     inputWrapper.classList.add('error');
@@ -20,7 +20,7 @@ const setError = (element, message) => {
 
 const setSuccess = element => {
     const inputWrapper = element.parentElement;
-    const errorDisplay = inputWrapper.querySelector('.error');
+    const errorDisplay = inputWrapper.querySelector('.error-message');
 
     errorDisplay.innerText = '';
     inputWrapper.classList.add('success');
