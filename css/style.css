@@ -80,7 +80,7 @@ ul {
   --fw-regular: 400;
   --fw-bold: 700;
   --fw-extrabold: 800;
-  --fs-small: 1rem;
+  --fs-small: 1.2rem;
   --fs-regular: 2rem;
   --fs-big: 6rem;
 }
@@ -101,6 +101,19 @@ body {
 
 body {
   font-family: var(--font-family);
+}
+
+.attribution {
+  margin-top: 4rem;
+  color: var(--grey);
+  font-size: var(--fs-small);
+}
+.attribution p {
+  margin-top: 0.3rem;
+}
+.attribution a {
+  color: var(--grey);
+  font-weight: var(--fw-bold);
 }
 
 .age {

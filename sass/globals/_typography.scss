@@ -1,3 +1,16 @@
 body {
     font-family: var(--font-family);
 }
+
+.attribution {
+    margin-top: 4rem;
+    color: var(--grey);
+    font-size: var(--fs-small);
+    p {
+        margin-top: 0.3rem;
+    }
+    a { 
+        color: var(--grey);
+        font-weight: var(--fw-bold);
+    }
+}
