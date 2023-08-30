@@ -1,4 +1,8 @@
 .form {
+    background-color: var(--white);
+    padding: 4rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
 
     &__head {
         gap: 2.5rem;
@@ -13,7 +17,7 @@
     }
 
     &__input {
-
+        height: 4rem;
     }
 }
 

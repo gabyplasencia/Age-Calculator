@@ -93,20 +93,22 @@ body {
   margin: 2rem;
   margin-inline: auto;
   width: 60%;
-  background-color: var(--white);
-  padding: 4rem;
-  border-radius: 20px;
-  border-bottom-right-radius: 150px;
 }
 
 .attribution {
-  margin-inline: auto;
+  text-align: center;
 }
 
 body {
   font-family: var(--font-family);
 }
 
+.form {
+  background-color: var(--white);
+  padding: 4rem;
+  border-radius: 20px;
+  border-bottom-right-radius: 150px;
+}
 .form__head {
   gap: 2.5rem;
 }
@@ -117,6 +119,10 @@ body {
   letter-spacing: 2.5px;
   color: var(--grey);
 }
+.form__input {
+  height: 4rem;
+}
+
 .btn-wrapper {
   position: relative;
   width: 100%;
