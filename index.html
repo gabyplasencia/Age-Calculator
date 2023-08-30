@@ -14,21 +14,24 @@
   <main>
     <div class="container">
       <div class="form">
-        <form>
+        <form id="form">
           <div class="form__head">
-            <div class="form__wrapper flex-column">
+            <div class="input-wrapper flex-column">
              <label class="form__label" for="day">Day</label>
              <input class="form__input" type="text" name="day" id="day-input" placeholder="DD">
+             <div class="error-message"></div>
            </div>
      
-           <div class="form__wrapper flex-column">
+           <div class="input-wrapper flex-column">
              <label class="form__label" for="month">Month</label>
              <input class="form__input" type="text" name="month" id="month-input" placeholder="MM">
+             <div class="error-message"></div>
            </div>
      
-           <div class="form__wrapper flex-column">
+           <div class="input-wrapper flex-column">
              <label class="form__label" for="year">Year</label>
              <input class="form__input" type="text" name="year" id="year-input" placeholder="YYYY">
+             <div class="error-message"></div>
            </div>
           </div>
           
