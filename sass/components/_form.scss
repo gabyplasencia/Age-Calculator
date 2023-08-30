@@ -5,7 +5,9 @@
     border-bottom-right-radius: 150px;
 
     &__head {
-        gap: 2.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 20%);
+        gap: 2rem;
     }
 
     &__label{
@@ -17,7 +19,19 @@
     }
 
     &__input {
-        height: 4rem;
+        height: 5.5rem;
+        font-size: var(--fs-regular);
+        font-weight: var(--fw-bold);
+        color: var(--grey);
+        margin-top: 0.8rem;
+        border: solid 3px var(--off-white);
+        border-radius: 10px;
+        padding: 0.6rem 1.5rem;
+    }
+
+    &__input::placeholder {
+        font-size: var(--fs-regular);
+        font-weight: var(--fw-bold);
     }
 }
 

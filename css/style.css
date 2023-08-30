@@ -110,7 +110,9 @@ body {
   border-bottom-right-radius: 150px;
 }
 .form__head {
-  gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  gap: 2rem;
 }
 .form__label {
   font-size: var(--fs-small);
@@ -120,7 +122,22 @@ body {
   color: var(--grey);
 }
 .form__input {
-  height: 4rem;
+  height: 5.5rem;
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-bold);
+  color: var(--grey);
+  margin-top: 0.8rem;
+  border: solid 3px var(--off-white);
+  border-radius: 10px;
+  padding: 0.6rem 1.5rem;
+}
+.form__input::-moz-placeholder {
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-bold);
+}
+.form__input::placeholder {
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-bold);
 }
 
 .btn-wrapper {
