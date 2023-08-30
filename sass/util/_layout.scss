@@ -1,6 +1,11 @@
 $desktop: 1440px;
 $tablet: 820px;
 $mobile: 376px;
+$t-time: 250ms;
+
+@mixin animation {
+    transition: all $t-time ease;
+}
 
 .flex-row {
     display: flex;
