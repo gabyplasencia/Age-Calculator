@@ -1,0 +1,12 @@
+.age {
+    font-size: var(--fs-big);
+    font-weight: var(--fw-extrabold);
+    font-style: italic;
+    color: var(--black);
+    letter-spacing: -3px;
+
+    &__number {
+        color: var(--purple);
+        letter-spacing: 14px;
+    }
+}

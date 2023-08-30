@@ -82,7 +82,7 @@ ul {
   --fw-extrabold: 800;
   --fs-small: 1rem;
   --fs-regular: 2rem;
-  --fs-big: 4rem;
+  --fs-big: 6rem;
 }
 
 body {
@@ -101,6 +101,18 @@ body {
 
 body {
   font-family: var(--font-family);
+}
+
+.age {
+  font-size: var(--fs-big);
+  font-weight: var(--fw-extrabold);
+  font-style: italic;
+  color: var(--black);
+  letter-spacing: -3px;
+}
+.age__number {
+  color: var(--purple);
+  letter-spacing: 14px;
 }
 
 .form {
