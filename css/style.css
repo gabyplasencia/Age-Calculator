@@ -145,6 +145,11 @@ body {
   letter-spacing: 14px;
 }
 
+.age.success .age__number {
+  letter-spacing: 1px;
+  margin-right: 0.7rem;
+}
+
 @media (max-width: 376px) {
   .age {
     letter-spacing: -2px;

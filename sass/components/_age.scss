@@ -13,6 +13,14 @@
     }
 }
 
+.age.success {
+    .age__number{
+        letter-spacing: 1px;
+        margin-right: 0.7rem;
+    }
+    
+}
+
 @media (max-width: u.$mobile){
     .age {
         letter-spacing: -2px;

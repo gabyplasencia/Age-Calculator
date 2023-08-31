@@ -11,7 +11,7 @@ form.addEventListener('submit', e => {
 });
 
 const setError = (element, message) => {
-    const formHead = element.closest(".form__head")
+    const formHead = element.closest(".form__head");
     const inputWrapper = element.parentElement;
     const errorDisplay = inputWrapper.querySelector('.error-message');
     errorDisplay.innerText = message;
@@ -19,11 +19,13 @@ const setError = (element, message) => {
 }
 
 const setSuccess = element => {
-    const formHead = element.closest(".form__head")
+    const formHead = element.closest(".form__head");
+    const ageNumber = document.querySelector('.age');
     const inputWrapper = element.parentElement;
     const errorDisplay = inputWrapper.querySelector('.error-message');
     errorDisplay.innerText = '';
     formHead.classList.remove('error');
+    ageNumber.classList.add('success');
 };
 
 const validateInputs = (dayI, monthI, yearI) => {
@@ -66,6 +68,9 @@ const validateInputs = (dayI, monthI, yearI) => {
     }
 
     if(!success){
+        document.getElementById('age-year').innerHTML = '--';
+        document.getElementById('age-month').innerHTML = '--';
+        document.getElementById('age-day').innerHTML = '--'; 
         return;
     }
         const yearAge = currentDate.getFullYear() - year;
