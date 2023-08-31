@@ -3,8 +3,8 @@ $tablet: 820px;
 $mobile: 376px;
 $t-time: 250ms;
 
-@mixin animation {
-    transition: all $t-time ease;
+@mixin animation($time:$t-time) {
+    transition: all $time ease;
 }
 
 .flex-row {
