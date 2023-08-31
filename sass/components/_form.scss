@@ -48,16 +48,16 @@
 
 }
 
-.input-wrapper.error{
+.form__head.error{
+    .input-wrapper{
+        .form__label{
+            color: var(--light-red);
+        }
 
-    .form__label{
-        color: var(--light-red);
+        .form__input {
+            border-color: var(--light-red);
+        }
     }
-
-    .form__input {
-        border-color: var(--light-red);
-    }
-    
 }
 
 .input-wrapper .error-message {
