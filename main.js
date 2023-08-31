@@ -41,10 +41,8 @@ const validateInputs = (dayI, monthI, yearI) => {
     let currentYear = currentDate.getFullYear();
 
     const months = [31,28,31,30,31,30,31,31,30,31,30,31];
-
-    leapChecker(currentYear);
-
-    function leapChecker(year){
+    
+    const leapChecker = (year) =>{
         if(year % 4 === 0 || (year % 100 === 0 && year % 400 === 0)){
             months[1] = 29;
         }
@@ -52,6 +50,7 @@ const validateInputs = (dayI, monthI, yearI) => {
             months[1] = 28;
         }
     }
+    leapChecker(currentYear);
 
     birthYear = currentYear - year;
 

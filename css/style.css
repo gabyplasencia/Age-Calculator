@@ -143,6 +143,7 @@ body {
 .age__number {
   color: var(--purple);
   letter-spacing: 14px;
+  transition: all 500ms ease;
 }
 
 .age.success .age__number {
@@ -260,13 +261,14 @@ body {
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: var(--purple);
-  transition: all 100ms ease;
+  box-shadow: 0 0 1px 1px transparent;
+  transition: all 200ms ease;
 }
 .button:hover {
   background-color: var(--black);
 }
 .button:active {
-  box-shadow: 0 0 1px 20px var(--grey);
+  box-shadow: 0 0 1px 25px var(--grey);
 }
 
 @media (max-width: 376px) {

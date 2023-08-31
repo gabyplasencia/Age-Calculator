@@ -30,14 +30,15 @@ $negative-height-btn: -6rem;
     aspect-ratio: 1;
     border-radius: 50%;
     background-color: var(--purple);
-    @include u.animation(100ms);
+    box-shadow: 0 0 1px 1px transparent;
+    @include u.animation(200ms);
 
     &:hover {
       background-color: var(--black);
     }
 
     &:active {
-      box-shadow: 0 0 1px 20px var(--grey);
+      box-shadow: 0 0 1px 25px var(--grey);
     }
   }
 

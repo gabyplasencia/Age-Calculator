@@ -10,6 +10,7 @@
     &__number {
         color: var(--purple);
         letter-spacing: 14px;
+        @include u.animation(500ms);
     }
 }
 
