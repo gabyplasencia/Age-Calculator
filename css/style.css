@@ -87,14 +87,14 @@ ul {
 
 @media (min-width: 550px) {
   :root {
-    --fs-small: 1rem;
+    --fs-small: 1.2rem;
     --fs-regular: 1.6rem;
     --fs-big: 4.6rem;
   }
 }
 @media (min-width: 1440px) {
   :root {
-    --fs-small: 1.2rem;
+    --fs-small: 1.3rem;
     --fs-regular: 2rem;
     --fs-big: 6rem;
   }
@@ -130,10 +130,14 @@ body {
   font-weight: var(--fw-bold);
 }
 
+@media (min-width: 550px) {
+  .attribution {
+    font-size: var(--fs-small);
+  }
+}
 @media (min-width: 1440px) {
   .attribution {
     margin-top: 4rem;
-    font-size: var(--fs-small);
   }
 }
 .age {
@@ -166,14 +170,14 @@ body {
 .form {
   margin-top: 5rem;
   background-color: var(--white);
-  padding: 4rem;
+  padding: 3rem 1.4rem;
+  border-bottom-right-radius: 100px;
   border-radius: 20px;
-  border-bottom-right-radius: 150px;
 }
 .form__head {
   display: grid;
-  grid-template-columns: repeat(3, 20%);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 30%);
+  gap: 0.5rem;
 }
 .form__label {
   font-size: var(--fs-small);
@@ -183,14 +187,14 @@ body {
   color: var(--grey);
 }
 .form__input {
-  height: 5.5rem;
+  margin-top: 0.4rem;
+  height: 3.2rem;
+  padding: 0.4rem 0.6rem;
   font-size: var(--fs-regular);
   font-weight: var(--fw-bold);
   color: var(--black);
-  margin-top: 0.8rem;
   border: solid 3px var(--off-white);
   border-radius: 10px;
-  padding: 0.6rem 1.5rem;
   transition: all 250ms ease;
 }
 .form__input:focus {
@@ -222,19 +226,33 @@ body {
   margin-top: 0.5rem;
 }
 
-@media (min-width: 1px) and (max-width: 550px) {
+@media (min-width: 550px) {
   .form {
-    padding: 3rem 1.4rem;
-    border-bottom-right-radius: 100px;
+    padding: 3rem;
   }
   .form__head {
-    grid-template-columns: repeat(3, 32%);
-    gap: 0.5rem;
+    grid-template-columns: repeat(3, 27%);
+    gap: 1.7rem;
   }
   .form__input {
+    height: 4.5rem;
     margin-top: 0.4rem;
-    height: 3rem;
-    padding: 0.4rem 0.6rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .form {
+    padding: 4rem;
+    border-bottom-right-radius: 150px;
+  }
+  .form__head {
+    grid-template-columns: repeat(3, 25%);
+    gap: 2rem;
+  }
+  .form__input {
+    height: 5.5rem;
+    margin-top: 0.8rem;
+    padding: 0.6rem 1.5rem;
   }
 }
 .btn-wrapper {

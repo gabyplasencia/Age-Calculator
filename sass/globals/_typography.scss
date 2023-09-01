@@ -17,9 +17,14 @@ body {
     }
 }
 
+@media (min-width: u.$tablet){
+    .attribution {
+        font-size: var(--fs-small);
+    }
+}
+
 @media (min-width: u.$desktop){
     .attribution {
         margin-top: 4rem;
-        font-size: var(--fs-small);
     }
 }

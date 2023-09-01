@@ -15,7 +15,7 @@
 
 @media (min-width: u.$tablet){
     :root {
-        --fs-small: 1rem;
+        --fs-small: 1.2rem;
         --fs-regular: 1.6rem;
         --fs-big: 4.6rem;
     }
@@ -23,7 +23,7 @@
 
 @media (min-width: u.$desktop){
     :root {
-        --fs-small: 1.2rem;
+        --fs-small: 1.3rem;
         --fs-regular: 2rem;
         --fs-big: 6rem;
     }
