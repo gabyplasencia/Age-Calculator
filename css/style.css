@@ -85,6 +85,20 @@ ul {
   --fs-big: 6rem;
 }
 
+@media (min-width: 700px) and (max-width: 1440px) {
+  :root {
+    --fs-small: 1rem;
+    --fs-regular: 1.8rem;
+    --fs-big: 5rem;
+  }
+}
+@media (min-width: 376px) and (max-width: 700px) {
+  :root {
+    --fs-small: 0.7rem;
+    --fs-regular: 1.1rem;
+    --fs-big: 3rem;
+  }
+}
 @media (max-width: 376px) {
   :root {
     --fs-small: 0.7rem;
@@ -98,16 +112,17 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 60%;
+  width: 90%;
+  max-width: 1000px;
 }
 
 .attribution {
   text-align: center;
 }
 
-@media (max-width: 376px) {
+@media (min-width: 1440px) {
   .container {
-    width: 90%;
+    width: 60%;
   }
 }
 body {
@@ -115,7 +130,7 @@ body {
 }
 
 .attribution {
-  margin-top: 4rem;
+  margin-top: 6rem;
   color: var(--grey);
   font-size: var(--fs-small);
 }
@@ -127,7 +142,7 @@ body {
   font-weight: var(--fw-bold);
 }
 
-@media (max-width: 376px) {
+@media (min-width: 1px) and (max-width: 700px) {
   .attribution {
     margin-top: 2.5rem;
     font-size: var(--fs-regular);
@@ -219,13 +234,13 @@ body {
   margin-top: 0.5rem;
 }
 
-@media (max-width: 376px) {
+@media (min-width: 1px) and (max-width: 700px) {
   .form {
     padding: 3rem 1.4rem;
     border-bottom-right-radius: 100px;
   }
   .form__head {
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 32%);
     gap: 0.5rem;
   }
   .form__input {

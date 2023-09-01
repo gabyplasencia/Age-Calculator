@@ -6,15 +6,16 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 60%;
+    width: 90%;
+    max-width: 1000px;
 }
 
 .attribution {
     text-align: center;
 }
 
-@media (max-width: u.$mobile) {
+@media (min-width: u.$desktop) {
     .container{
-        width: 90%;
+        width: 60%;
     }
 }

@@ -10,7 +10,7 @@ form.addEventListener('submit', e => {
 });
 
 const setError = (element, message) => {
-    const formHead = element.closest(".form__head");
+    const formHead = document.querySelector('.form__head');
     const inputWrapper = element.parentElement;
     const errorDisplay = inputWrapper.querySelector('.error-message');
     errorDisplay.innerText = message;
@@ -18,7 +18,7 @@ const setError = (element, message) => {
 }
 
 const setSuccess = element => {
-    const formHead = element.closest(".form__head");
+    const formHead = document.querySelector('.form__head');
     const ageNumber = document.querySelector('.age');
     const inputWrapper = element.parentElement;
     const errorDisplay = inputWrapper.querySelector('.error-message');
@@ -32,43 +32,42 @@ const validateInputs = (dayI, monthI, yearI) => {
     let success = true;
     
     let birthMonth,birthDay,birthYear;
-    const day = dayI.value;
-    const month = monthI.value;
-    const year = yearI.value;
+    let day = dayI.value;
+    let month = monthI.value;
+    let year = yearI.value;
 
     let currentDay = currentDate.getDate();
     let currentMonth = currentDate.getMonth() + 1;
     let currentYear = currentDate.getFullYear();
 
     const months = [31,28,31,30,31,30,31,31,30,31,30,31];
-    
+
     const leapChecker = (year) =>{
-        if(year % 4 === 0 || (year % 100 === 0 && year % 400 === 0)){
-            months[1] = 29;
-        }
-        else{
-            months[1] = 28;
-        }
+     if(year % 4 === 0 || (year % 100 === 0 && year % 400 === 0)){
+        months[1] = 29;
+     }
+     else{
+        months[1] = 28;
+     }
     }
+
     leapChecker(currentYear);
 
     birthYear = currentYear - year;
 
     if(currentMonth >= month){
         birthMonth = currentMonth - month;
-    }
-    else{
+    } else{
         birthYear--;
         birthMonth = 12 + currentMonth - month;
     }
 
     if(currentDay >= day){
         birthDay = currentDay - day;
-    }
-    else{
+    } else{
         birthMonth--;
         let days = months[currentMonth - 2];
-        day = days + currentDay - day;
+        birthDay = days + currentDay - day;
         if(birthMonth < 0){
             birthMonth = 11;
             birthYear--;
@@ -125,5 +124,4 @@ const validateInputs = (dayI, monthI, yearI) => {
         document.getElementById('age-year').innerHTML = birthYear;
         document.getElementById('age-month').innerHTML = birthMonth;
         document.getElementById('age-day').innerHTML = birthDay; 
-    
 };

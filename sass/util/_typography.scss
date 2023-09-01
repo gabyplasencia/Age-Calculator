@@ -12,6 +12,22 @@
     --fs-big: 6rem;
 }
 
+@media (min-width: u.$tablet) and (max-width: u.$desktop){
+    :root {
+        --fs-small: 1rem;
+        --fs-regular: 1.8rem;
+        --fs-big: 5rem;
+    }
+}
+
+@media (min-width: u.$mobile) and (max-width: u.$tablet){
+    :root {
+        --fs-small: 0.7rem;
+        --fs-regular: 1.1rem;
+        --fs-big: 3rem;
+    }
+}
+
 @media (max-width: u.$mobile){
     :root {
         --fs-small: 0.7rem;

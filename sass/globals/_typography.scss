@@ -5,7 +5,7 @@ body {
 }
 
 .attribution {
-    margin-top: 4rem;
+    margin-top: 6rem;
     color: var(--grey);
     font-size: var(--fs-small);
     p {
@@ -17,7 +17,7 @@ body {
     }
 }
 
-@media (max-width: u.$mobile) {
+@media (min-width: 1px) and (max-width: u.$tablet) {
     .attribution {
         margin-top: 2.5rem;
         font-size: var(--fs-regular);
