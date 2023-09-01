@@ -6,8 +6,14 @@ const yearI = document.getElementById('year-input');
 form.addEventListener('submit', e => {
     e.preventDefault();
 
+    reset();
     validateInputs(dayI, monthI, yearI );
 });
+
+const reset = () => {
+    const ageNumber = document.querySelector('.age');
+    ageNumber.classList.remove('success');
+}
 
 const setError = (element, message) => {
     const formHead = document.querySelector('.form__head');

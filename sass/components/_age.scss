@@ -5,11 +5,12 @@
     font-weight: var(--fw-extrabold);
     font-style: italic;
     color: var(--black);
-    letter-spacing: -3px;
+    letter-spacing: -2px;
 
     &__number {
+        margin-right: 0.5rem;
         color: var(--purple);
-        letter-spacing: 14px;
+        letter-spacing: 1px;
         @include u.animation(500ms);
     }
 }
@@ -17,18 +18,18 @@
 .age.success {
     .age__number{
         letter-spacing: 1px;
-        margin-right: 0.7rem;
+        margin-right: 0.8rem;
     }
     
 }
 
-@media (max-width: u.$mobile){
+@media (min-width: u.$desktop){
     .age {
-        letter-spacing: -2px;
+        letter-spacing: -3px;
     
         &__number {
-            margin-right: 0.5rem;
-            letter-spacing: 1px;
+            margin: 0rem;
+            letter-spacing: 14px;
         }
     }
 }
