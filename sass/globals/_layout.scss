@@ -7,15 +7,11 @@ body {
 .container {
     margin: 0 auto;
     width: 90%;
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 .attribution {
     text-align: center;
 }
 
-@media (min-width: u.$desktop) {
-    .container{
-        width: 60%;
-    }
-}
+
