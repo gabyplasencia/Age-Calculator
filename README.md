@@ -3,7 +3,7 @@
 ## The challenge
 
 Your challenge is to build out this age calculator app and get it looking as close to the design as possible.
-https://www.figma.com/file/Mvsaljkp2WWS8LCLgVtXO8/Untitled?type=design&node-id=0%3A1&mode=design&t=1HvkFZ7hNiptIcl0-1
+[Figma Design](https://www.figma.com/file/Mvsaljkp2WWS8LCLgVtXO8/Untitled?type=design&node-id=0%3A1&mode=design&t=1HvkFZ7hNiptIcl0-1)
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
@@ -28,3 +28,5 @@ Your users should be able to:
 - Javascript
 
 ### Live Site
+
+[Age Calculator](https://agecalculator-gabyplasencia.netlify.app/)
