@@ -7,6 +7,12 @@
     color: var(--black);
     letter-spacing: -2px;
 
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+      }
+
     &__number {
         margin-right: 0.5rem;
         color: var(--purple);

@@ -147,6 +147,11 @@ body {
   color: var(--black);
   letter-spacing: -2px;
 }
+.age__wrapper {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
 .age__number {
   margin-right: 0.5rem;
   color: var(--purple);

@@ -1,19 +1,19 @@
 const form = document.getElementById('form');
+
 const dayI = document.getElementById('day-input');
 const monthI = document.getElementById('month-input');
 const yearI = document.getElementById('year-input');
 
+const ageNumber = document.querySelector('.age');
+const dayAge = document.querySelector('.age-day');
+const monthAge = document.querySelector('.age-month');
+const yearAge = document.querySelector('.age-year');
+
 form.addEventListener('submit', e => {
     e.preventDefault();
 
-    reset();
     validateInputs(dayI, monthI, yearI );
 });
-
-const reset = () => {
-    const ageNumber = document.querySelector('.age');
-    ageNumber.classList.remove('success');
-}
 
 const setError = (element, message) => {
     const formHead = document.querySelector('.form__head');
@@ -25,13 +25,31 @@ const setError = (element, message) => {
 
 const setSuccess = element => {
     const formHead = document.querySelector('.form__head');
-    const ageNumber = document.querySelector('.age');
     const inputWrapper = element.parentElement;
     const errorDisplay = inputWrapper.querySelector('.error-message');
     errorDisplay.innerText = '';
     formHead.classList.remove('error');
-    ageNumber.classList.add('success');
 };
+
+const setNumbers = (year, month, day) => {
+    yearAge.classList.add('animation');
+    monthAge.classList.add('animation');
+    dayAge.classList.add('animation');
+  
+    setTimeout (() => {
+      yearAge.classList.remove('animation');
+      document.getElementById('age-year').innerHTML = year;
+      ageNumber.classList.add('success');
+    }, 1900);
+      setTimeout (() => {
+      monthAge.classList.remove('animation');
+      document.getElementById('age-month').innerHTML = month;
+    }, 3000);
+      setTimeout (() => {
+      dayAge.classList.remove('animation');
+      document.getElementById('age-day').innerHTML = day; 
+    }, 4000);
+}
 
 const validateInputs = (dayI, monthI, yearI) => {
     const currentDate = new Date(); 
@@ -126,8 +144,6 @@ const validateInputs = (dayI, monthI, yearI) => {
         document.getElementById('age-day').innerHTML = '--'; 
         return;
     }
-    
-        document.getElementById('age-year').innerHTML = birthYear;
-        document.getElementById('age-month').innerHTML = birthMonth;
-        document.getElementById('age-day').innerHTML = birthDay; 
+
+    setNumbers(birthYear, birthMonth, birthDay);
 };
