@@ -5,9 +5,9 @@ const monthI = document.getElementById('month-input');
 const yearI = document.getElementById('year-input');
 
 const ageNumber = document.querySelector('.age');
-const dayAge = document.querySelector('.age-day');
-const monthAge = document.querySelector('.age-month');
-const yearAge = document.querySelector('.age-year');
+const dayAge = document.getElementById('age-day');
+const monthAge = document.getElementById('age-month');
+const yearAge = document.getElementById('age-year');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -35,6 +35,10 @@ const setNumbers = (year, month, day) => {
     yearAge.classList.add('animation');
     monthAge.classList.add('animation');
     dayAge.classList.add('animation');
+
+    yearAge.innerHTML = '?';
+    monthAge.innerHTML = '?';
+    dayAge.innerHTML = '?';
   
     setTimeout (() => {
       yearAge.classList.remove('animation');
