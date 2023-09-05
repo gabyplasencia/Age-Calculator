@@ -36,23 +36,23 @@ const setNumbers = (year, month, day) => {
     monthAge.classList.add('animation');
     dayAge.classList.add('animation');
 
-    yearAge.innerHTML = '?';
-    monthAge.innerHTML = '?';
-    dayAge.innerHTML = '?';
+    yearAge.innerHTML = '--';
+    monthAge.innerHTML = '--';
+    dayAge.innerHTML = '--';
   
     setTimeout (() => {
       yearAge.classList.remove('animation');
       document.getElementById('age-year').innerHTML = year;
       ageNumber.classList.add('success');
-    }, 1900);
+    }, 2400);
       setTimeout (() => {
       monthAge.classList.remove('animation');
       document.getElementById('age-month').innerHTML = month;
-    }, 3000);
+    }, 3400);
       setTimeout (() => {
       dayAge.classList.remove('animation');
       document.getElementById('age-day').innerHTML = day; 
-    }, 4000);
+    }, 4400);
 }
 
 const validateInputs = (dayI, monthI, yearI) => {
